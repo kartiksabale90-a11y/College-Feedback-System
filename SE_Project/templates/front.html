@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silent Classroom Feedback System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/design.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>College Feedback System</h1>
+            <p class="subtitle">
+                Your feedback helps improve teaching quality.  
+            </p>
+        </header>
+
+        <section class="form-section">
+            <h2>Lecture Feedback Form</h2>
+
+            <form action="/submit" method="post">
+
+                <div class="form-group">
+                    <label for="session_code">
+                        Subject Code
+                    </label>
+                    <input 
+                        type="text" 
+                        id="session_code" 
+                        name="session_code" 
+                        placeholder="e.g. FYBCS SEC-2"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Overall Lecture Rating
+                    </label>
+                    <div class="rating-group">
+                        <label><input type="radio" name="rating" value="1" required> 1</label>
+                        <label><input type="radio" name="rating" value="2"> 2</label>
+                        <label><input type="radio" name="rating" value="3"> 3</label>
+                        <label><input type="radio" name="rating" value="4"> 4</label>
+                        <label><input type="radio" name="rating" value="5"> 5</label>
+                    </div>
+                    <small>1 = Very Poor, 5 = Excellent</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="understanding">
+                        How well did you understand the lecture?
+                    </label>
+                    <select id="understanding" name="understanding" required>
+                        <option value="">Select</option>
+                        <option value="poor">Poor</option>
+                        <option value="average">Average</option>
+                        <option value="good">Good</option>
+                        <option value="excellent">Excellent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">
+                        Additional Comments (Optional)
+                    </label>
+                    <textarea 
+                        id="comment" 
+                        name="comment" 
+                        rows="4"
+                        placeholder="You may suggest improvements or mention difficulties...">
+                    </textarea>
+                </div>
+
+                <div class="privacy-note">
+                    <p>
+                        No personal details are collected.  
+                        Feedback is stored only for academic improvement.
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit Feedback</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>
+                © 2026 Silent Classroom Feedback System  
+                | SEC-2 Software Engineering Project 
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

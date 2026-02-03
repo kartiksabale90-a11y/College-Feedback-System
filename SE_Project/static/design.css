@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-section h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.rating-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.rating-group label {
+    font-weight: normal;
+}
+
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+}
+
+
+.privacy-note {
+    background-color: #f1f5f9;
+    padding: 10px;
+    font-size: 13px;
+    color: #444;
+}
+
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c80b4;
+}
+
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+.success-box {
+    background: #ffffff;
+    padding: 40px;
+    max-width: 500px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.success-box h1 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.success-box p {
+    color: #444;
+    font-size: 16px;
+}
+
+.success-box .note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #3b9ad4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background: #338ec7;
+}
